@@ -1,11 +1,11 @@
-1.MyToken Smart Contract
+1.MyToken Smart Contract:
 MyToken is a simple ERC-20-like token smart contract implemented in Solidity. This contract allows for the minting and burning of tokens.
 
-2.Token Details
-A. Token Name: gold.
-B. Token Symbol: coin
-C. Total Supply: The total supply of tokens is dynamic and can be modified by minting and burning tokens.
-3. Features
+2.Token Details:
+A.Token Name: gold.
+B.Token Symbol: coin.
+C.Total Supply: The total supply of tokens is dynamic and can be modified by minting and burning tokens.
+3.Features:
 A. Minting: Allows new tokens to be created and assigned to an address.
 B. Burning: Allows tokens to be destroyed from an address, reducing the total supply.
 4. Smart Contract Overview
