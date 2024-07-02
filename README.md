@@ -7,10 +7,12 @@
   A.Token Name: gold.
   B.Token Symbol: coin.
   C.Total Supply: The total supply of tokens is dynamic and can be modified by minting and burning tokens.
+  
 3.Features:
 
   A. Minting: Allows new tokens to be created and assigned to an address.
   B. Burning: Allows tokens to be destroyed from an address, reducing the total supply.
+  
 4. Smart Contract Overview
 
    A. Variables
@@ -18,6 +20,7 @@
    C. string public tokenAbbrv: Stores the abbreviation (symbol) of the token.
    D. uint public totalSupply: Stores the total supply of the token.
    E. mapping(address => uint) public balances: Maps addresses to their respective token balances.
+   
 5. Functions
 
    A. mint(address _to, uint _value).
