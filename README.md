@@ -1,11 +1,15 @@
 MyToken
+
 This Solidity program is a simple token contract that demonstrates basic token functionality, such as minting and burning tokens. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to get a feel for how token contracts work.
 
 Description
+
 This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract allows users to mint new tokens and burn existing tokens. It keeps track of token balances and the total supply. This program serves as a straightforward introduction to token contract programming and can be used as a stepping stone for more complex projects in the future.
 
 Getting Started
+
 Executing Program
+
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at Remix IDE.
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., MyToken.sol). Copy and paste the following code into the file:
