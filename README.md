@@ -18,13 +18,17 @@ Mapping:
 
 balances: A mapping from addresses to their respective balances.
 
-Mint Function: mint(address _to, uint _value): This function takes an address and an amount (_value) as parameters.
+Mint Function:
+
+mint(address _to, uint _value): This function takes an address and an amount (_value) as parameters.
 
 Increases the totalSupply by the specified amount (_value).
 
 Increases the balance of the specified address (_to) by the specified amount (_value).
 
-Burn Function: burn(address _from, uint _value): This function takes an address and an amount (_value) as parameters.
+Burn Function:
+
+burn(address _from, uint _value): This function takes an address and an amount (_value) as parameters.
 
 Includes a require statement to ensure that the balance of the specified address (_from) is sufficient to burn the specified amount(_value).
 
