@@ -1,58 +1,18 @@
-1.MyToken Smart Contract:
-
-  MyToken is a simple ERC-20-like token smart contract implemented in Solidity. This contract allows for the minting and burning of tokens.
-
-2.Token Details:
-
-  A.Token Name: gold.
-  B.Token Symbol: coin.
-  C.Total Supply: The total supply of tokens is dynamic and can be modified by minting and burning tokens.
-  
-3.Features:
-
-  A. Minting: Allows new tokens to be created and assigned to an address.
-  B. Burning: Allows tokens to be destroyed from an address, reducing the total supply.
-  
-4. Smart Contract Overview
-
-   A. Variables
-   B. string public tokenName: Stores the name of the token.
-   C. string public tokenAbbrv: Stores the abbreviation (symbol) of the token.
-   D. uint public totalSupply: Stores the total supply of the token.
-   E. mapping(address => uint) public balances: Maps addresses to their respective token balances.
+Public Variables:
+1. tokennaNme: A string to store the name of the token.
+2. tokenAbbrv: A string to store the abbreviation (tokenAbbrv) of the token.
+3. totalSupply: An unsigned integer to store the total supply of tokens.
    
-5. Functions
-
-   A. mint(address _to, uint _value).
-   B. Mints new tokens and assigns them to the specified address.
-
-6. Parameters:
-
-   A. _to: The address to receive the newly minted tokens.
-   B. _value: The number of tokens to mint.
-   C. burn(address _from, uint _value).
-   D. Burns tokens from the specified address, reducing the total supply.
-
-7. Parameters:
-
-   A. _from: The address from which tokens will be burned.
-   B. _value: The number of tokens to burn.
-
-8. Requirements:
-
-   A. The address must have a sufficient balance to burn the specified number of tokens.
-
-9. Usage
-    
-   A. Prerequisites:
-   Ensure you have Node.js and npm installed.
-   Install Truffle and Ganache for local development and testing.
+Mapping:
+1. balances: A mapping from addresses to their respective balances.
    
-10. Installation
-    
-    A. Clone the repository.
-    B. Install dependencies.
-
-11. License
-    
-    A. This project is licensed under the MIT License - see the LICENSE file for details.
+Mint Function:
+mint(address _to, uint _value): This function takes an address and an amount (_value) as parameters.
+1. Increases the totalSupply by the specified amount (_value).
+2. Increases the balance of the specified address (_to) by the specified amount (_value).
+   
+Burn Function:
+burn(address _from, uint _value): This function takes an address and an amount (_value) as parameters.
+1. Includes a require statement to ensure that the balance of the specified address (_from) is sufficient to burn the specified amount(_value).
+2. Decreases the totalSupply by the specified amount (_value).
+3. Decreases the balance of the specified address (_from) by the specified amount (_value).
