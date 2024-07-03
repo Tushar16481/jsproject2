@@ -1,5 +1,5 @@
 Public Variables:
-1. tokennaName: A string to store the name of the token.
+1. tokenName: A string to store the name of the token.
 2. tokenAbbrv: A string to store the abbreviation (tokenAbbrv) of the token.
 3. totalSupply: An unsigned integer to store the total supply of tokens.
    
